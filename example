@@ -1,0 +1,26 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/rsREPsSCt/UILibrary/refs/heads/main/Main"))
+-- example to set up and check for events or value changes, this is a code example
+
+
+--// Demo
+
+local Container = Library.MakeCategory("Demo")
+
+--
+
+local Value = Instance.new("BoolValue")
+local Row:Frame = Container.MakeRow("Test", {Type = "bool", Container = Container, Value = Value})
+
+Value:GetPropertyChangedSignal("Value"):Connect(function()
+	print(Value)
+end)
+
+--
+
+local Row:Frame = Container.MakeRow("Test", {Type = "button", Container = Container})
+
+Row.ChildAdded:Connect(function(c)
+	if c.Name=="Event" then
+		print("Button pressed")
+	end
+end)
