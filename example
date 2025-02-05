@@ -1,5 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/rsREPsSCt/UILibrary/refs/heads/main/Main"))
--- example to set up and check for events or value changes, this is a code example
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/rsREPsSCt/UILibrary/refs/heads/main/Main"))()
 
 
 --// Demo
