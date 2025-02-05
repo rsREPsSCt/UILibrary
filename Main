@@ -761,75 +761,10 @@ local TableThreadsForRender = {}
 local gLibrary = {
 	Converted = Converted,
 	MakeCategory = function (Name:string)
-		local SidebarButton = Converted.g_ExampleSidebarButton:Clone()
-		SidebarButton:FindFirstChildWhichIsA("TextLabel").Text = Name
-		SidebarButton.Visible = true
-		SidebarButton.Parent = Converted.g_Sidebar
-
-		local Container = Converted.g_ExampleContainer:Clone()
-		Container.Visible = false
-		Container:AddTag("e")
-		Container.Parent = Converted.g_Containers
-
-		SidebarButton:FindFirstChildWhichIsA("TextButton").MouseButton1Down:Connect(function()
-			for _,v in Converted.g_Containers:GetChildren() do
-				if v:HasTag("e") and v:IsA("ScrollingFrame") then
-					v.Visible = false
-				end
-			end
-			Container.Visible = true
-		end)
-
-		return Container
+		
 	end,
 	MakeRow = function (Name, Configuration)
-		local Type = Configuration.Type or "Button"
-		local Value:BoolValue = Configuration.Value or Instance.new("BoolValue")
-		local Container = Configuration.Container or Converted.g_ExampleContainer
-		Type = Type:lower()
-
-		local Row = Converted.g_ExampleContainerRow:Clone()
-		Row.Visible = true
-		for _,v in Row:GetChildren() do
-			if v:IsA("Frame") then
-				v.Visible = false
-				if v.Name:lower():find(Type:lower()) then
-					v.Visible = true
-				end
-			end
-		end
-		Row.Bool.Label.Text = Name
-		Row.Button.TextButton.Text = Name
-		Row.Parent = Container
-
-		local function addEV()
-			local ev = Instance.new("BindableEvent")
-			ev.Name = "Event"
-			ev.Parent = Row
-			game.Debris:AddItem(ev, .5)
-		end
-
-		if Type=="bool" then
-			local Main = Row:FindFirstChild("Bool")
-			local Filler:Frame = Main:FindFirstChild("Filler")
-			local True:Frame = Filler:FindFirstChild("true")
-			local Button:TextButton = Filler:FindFirstChildWhichIsA("TextButton")
-
-			local function Update()
-				True.Visible = Value.Value
-			end
-			Update()
-
-			Button.MouseButton1Down:Connect(function()
-				Value.Value = not Value.Value
-				Update()
-			end)
-		end
-		Row:FindFirstChild("Button"):FindFirstChildWhichIsA("TextButton").MouseButton1Down:Connect(function()
-			addEV()
-		end)
-
-		return Row
+		
 	end,
 	SelectPlayer = function (Value:ObjectValue)
 
@@ -915,6 +850,78 @@ if RunService:IsStudio() then
 	Converted.UILibrary.Parent = Player.PlayerGui
 else
 	Converted.UILibrary.Parent = game:GetService("CoreGui")
+end
+
+function gLibrary.MakeCategory(Name:string)
+	local SidebarButton = Converted.g_ExampleSidebarButton:Clone()
+	SidebarButton:FindFirstChildWhichIsA("TextLabel").Text = Name
+	SidebarButton.Visible = true
+	SidebarButton.Parent = Converted.g_Sidebar
+
+	local Container = Converted.g_ExampleContainer:Clone()
+	Container.Visible = false
+	Container:AddTag("e")
+	Container.Parent = Converted.g_Containers
+
+	SidebarButton:FindFirstChildWhichIsA("TextButton").MouseButton1Down:Connect(function()
+		for _,v in Converted.g_Containers:GetChildren() do
+			if v:HasTag("e") and v:IsA("ScrollingFrame") then
+				v.Visible = false
+			end
+		end
+		Container.Visible = true
+	end)
+
+	return Container
+end
+function gLibrary.MakeRow(Name, Configuration)
+	local Type = Configuration.Type or "Button"
+	local Value:BoolValue = Configuration.Value or Instance.new("BoolValue")
+	local Container = Configuration.Container or Converted.g_ExampleContainer
+	Type = Type:lower()
+
+	local Row = Converted.g_ExampleContainerRow:Clone()
+	Row.Visible = true
+	for _,v in Row:GetChildren() do
+		if v:IsA("Frame") then
+			v.Visible = false
+			if v.Name:lower():find(Type:lower()) then
+				v.Visible = true
+			end
+		end
+	end
+	Row.Bool.Label.Text = Name
+	Row.Button.TextButton.Text = Name
+	Row.Parent = Container
+
+	local function addEV()
+		local ev = Instance.new("BindableEvent")
+		ev.Name = "Event"
+		ev.Parent = Row
+		game.Debris:AddItem(ev, .5)
+	end
+
+	if Type=="bool" then
+		local Main = Row:FindFirstChild("Bool")
+		local Filler:Frame = Main:FindFirstChild("Filler")
+		local True:Frame = Filler:FindFirstChild("true")
+		local Button:TextButton = Filler:FindFirstChildWhichIsA("TextButton")
+
+		local function Update()
+			True.Visible = Value.Value
+		end
+		Update()
+
+		Button.MouseButton1Down:Connect(function()
+			Value.Value = not Value.Value
+			Update()
+		end)
+	end
+	Row:FindFirstChild("Button"):FindFirstChildWhichIsA("TextButton").MouseButton1Down:Connect(function()
+		addEV()
+	end)
+
+	return Row
 end
 
 return gLibrary
