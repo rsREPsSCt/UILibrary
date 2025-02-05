@@ -811,7 +811,7 @@ local function MakeUI()
 	Converted['TextBox31'].Respective.BackgroundColor3 = Color3.new(0, 0, 0)
 	Converted['TextBox31'].Respective.AnchorPoint = Vector2.new(0.5, 0.5)
 	Converted['TextBox31'].Respective.Position = UDim2.new(0.814999998, 0, 0.5, 0)
-	Converted['TextBox31'].Respective.Size = UDim2.new(0.296130836, 0, 0.800000012, 0)
+	Converted['TextBox31'].Respective.Size = UDim2.new(0.296000004, 0, 0.899999976, 0)
 	Converted['TextBox31'].Respective.Text = ''
 	Converted['TextBox31'].Respective.RichText = false
 	Converted['TextBox31'].Respective.TextColor3 = Color3.new(1, 1, 1)
