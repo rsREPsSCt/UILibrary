@@ -2,6 +2,8 @@
 
 MakeCategory(Name) - Returns a container and adds a category 
 
+Title(Name) - update the title of the main window
+
 MakeRow(Name, {Type, Value, Container}) - Returns a row 
 Value - an optional ValueBase instance such as a boolvalue 
 Container - a container from the MakeCategory function 
