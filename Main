@@ -1299,7 +1299,7 @@ function gLibrary.MakeRow(Name, Configuration)
 		end
 	end
 	Row.Bool.Label.Text = Name
-	Row.Button.Label.Text = Name
+	Row.Button.TextButton.Text = Name
 	Row.String.Label.Text = Name
 	Row.Parent = Container
 
