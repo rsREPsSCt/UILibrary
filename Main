@@ -1299,7 +1299,8 @@ function gLibrary.MakeRow(Name, Configuration)
 		end
 	end
 	Row.Bool.Label.Text = Name
-	Row.Button.TextButton.Text = Name
+	Row.Button.Label.Text = Name
+	Row.String.Label.Text = Name
 	Row.Parent = Container
 
 	local function addEV()
@@ -1326,7 +1327,7 @@ function gLibrary.MakeRow(Name, Configuration)
 		end)
 	end
 	if Type=="string" then
-		local Main = Row:FindFirstChild("TextBox")
+		local Main = Row:FindFirstChild("String")
 		local TextBox:TextBox = Main:FindFirstChild("TextBox")
 
 		local function Update()
