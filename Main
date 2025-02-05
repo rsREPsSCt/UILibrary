@@ -924,4 +924,8 @@ function gLibrary.MakeRow(Name, Configuration)
 	return Row
 end
 
+Converted.g_ExampleContainer.Visible = false
+Converted.g_ExampleContainerRow.Visible = false
+Converted.g_ExampleSidebarButton.Visible = false
+
 return gLibrary
