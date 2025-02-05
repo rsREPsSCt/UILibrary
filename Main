@@ -1298,9 +1298,13 @@ function gLibrary.MakeRow(Name, Configuration)
 			end
 		end
 	end
-	Row.Bool.Label.Text = Name
-	Row.Button.TextButton.Text = Name
-	Row.String.Label.Text = Name
+	for _,v in Row:GetDescendants() do
+		if v.Name=="Label" then
+			if v:IsA("TextButton") or v:IsA("TextLabel") then
+				v.Text = Name
+			end
+		end
+	end
 	Row.Parent = Container
 
 	local function addEV()
@@ -1339,7 +1343,7 @@ function gLibrary.MakeRow(Name, Configuration)
 			Update()
 		end)
 	end
-	Row:FindFirstChild("Button"):FindFirstChildWhichIsA("TextButton").MouseButton1Down:Connect(function()
+	Row:FindFirstChild("Button"):FindFirstChildWhichIsA("Label").MouseButton1Down:Connect(function()
 		addEV()
 	end)
 
