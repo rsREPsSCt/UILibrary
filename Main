@@ -853,7 +853,7 @@ else
 end
 
 function gLibrary.Title(Name:string)
-	Converted.g_Title = Name
+	Converted.g_Title.Text = Name
 end
 function gLibrary.MakeCategory(Name:string)
 	local SidebarButton = Converted.g_ExampleSidebarButton:Clone()
