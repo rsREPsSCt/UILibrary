@@ -1,0 +1,15 @@
+--// Functions 
+
+MakeCategory(Name) - Returns a container and adds a category 
+
+MakeRow(Name, {Type, Value, Container}) - Returns a row 
+Value - an optional ValueBase instance such as a boolvalue 
+Container - a container from the MakeCategory function 
+Type - a string that can be one of - {"Bool", "Button"} 
+
+
+--// Other 
+
+Converted - a table containing all of the UIs contents
+
+
