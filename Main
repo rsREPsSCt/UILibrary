@@ -852,6 +852,9 @@ else
 	Converted.UILibrary.Parent = game:GetService("CoreGui")
 end
 
+function gLibrary.Title(Name:string)
+	Converted.g_Title = Name
+end
 function gLibrary.MakeCategory(Name:string)
 	local SidebarButton = Converted.g_ExampleSidebarButton:Clone()
 	SidebarButton:FindFirstChildWhichIsA("TextLabel").Text = Name
