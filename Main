@@ -1343,9 +1343,11 @@ function gLibrary.MakeRow(Name, Configuration)
 			Update()
 		end)
 	end
-	Row:FindFirstChild("Button"):FindFirstChildWhichIsA("Label").MouseButton1Down:Connect(function()
-		addEV()
-	end)
+	if Type=="Button" then
+		Row:FindFirstChild("Button"):FindFirstChildWhichIsA("Label").MouseButton1Down:Connect(function()
+			addEV()
+		end)
+	end
 
 	return Row
 end
