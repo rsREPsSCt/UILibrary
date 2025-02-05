@@ -44,9 +44,9 @@ local function MakeUI()
 	Converted['TextButton26'] = {Respective = Instance.new('TextButton'), Parent = Converted['Filler23'].Respective}
 	Converted['Configuration27'] = {Respective = Instance.new('ImageButton'), Parent = Converted['g_ExampleContainerRow18'].Respective}
 	Converted['UIAspectRatioConstraint28'] = {Respective = Instance.new('UIAspectRatioConstraint'), Parent = Converted['Configuration27'].Respective}
-	Converted['TextBox29'] = {Respective = Instance.new('Frame'), Parent = Converted['g_ExampleContainerRow18'].Respective}
-	Converted['Label30'] = {Respective = Instance.new('TextButton'), Parent = Converted['TextBox29'].Respective}
-	Converted['TextBox31'] = {Respective = Instance.new('TextBox'), Parent = Converted['TextBox29'].Respective}
+	Converted['String29'] = {Respective = Instance.new('Frame'), Parent = Converted['g_ExampleContainerRow18'].Respective}
+	Converted['Label30'] = {Respective = Instance.new('TextButton'), Parent = Converted['String29'].Respective}
+	Converted['TextBox31'] = {Respective = Instance.new('TextBox'), Parent = Converted['String29'].Respective}
 	Converted['UIListLayout32'] = {Respective = Instance.new('UIListLayout'), Parent = Converted['g_ExampleContainer17'].Respective}
 	Converted['UIPadding33'] = {Respective = Instance.new('UIPadding'), Parent = Converted['g_ExampleContainer17'].Respective}
 	Converted['g_ExampleContainerRow34'] = {Respective = Instance.new('Frame'), Parent = Converted['g_ExampleContainer17'].Respective}
@@ -742,28 +742,28 @@ local function MakeUI()
 	Converted['UIAspectRatioConstraint'] = Converted['UIAspectRatioConstraint28'].Respective
 	table.remove(Converted, table.find(Converted, 'UIAspectRatioConstraint28'))
 
-	Converted['TextBox29'].Respective.Name = 'TextBox'
-	Converted['TextBox29'].Respective.Interactable = true
-	Converted['TextBox29'].Respective.AutoLocalize = true
-	Converted['TextBox29'].Respective.ClipsDescendants = false
-	Converted['TextBox29'].Respective.Active = false
-	Converted['TextBox29'].Respective.Rotation = 0
-	Converted['TextBox29'].Respective.SizeConstraint = Enum.SizeConstraint.RelativeXY
-	Converted['TextBox29'].Respective.Visible = false
-	Converted['TextBox29'].Respective.LayoutOrder = 0
-	Converted['TextBox29'].Respective.ZIndex = 1
-	Converted['TextBox29'].Respective.BorderSizePixel = 0
-	Converted['TextBox29'].Respective.BorderMode = Enum.BorderMode.Outline
-	Converted['TextBox29'].Respective.BorderColor3 = Color3.new(0, 0, 0)
-	Converted['TextBox29'].Respective.AutomaticSize = Enum.AutomaticSize.None
-	Converted['TextBox29'].Respective.BackgroundTransparency = 1
-	Converted['TextBox29'].Respective.BackgroundColor3 = Color3.new(1, 1, 1)
-	Converted['TextBox29'].Respective.AnchorPoint = Vector2.new(0, 0)
-	Converted['TextBox29'].Respective.Position = UDim2.new(0, 0, 0, 0)
-	Converted['TextBox29'].Respective.Size = UDim2.new(1, 0, 1, 0)
-	Converted['TextBox29'].Respective.Parent = Converted['TextBox29'].Parent
-	Converted['TextBox'] = Converted['TextBox29'].Respective
-	table.remove(Converted, table.find(Converted, 'TextBox29'))
+	Converted['String29'].Respective.Name = 'String'
+	Converted['String29'].Respective.Interactable = true
+	Converted['String29'].Respective.AutoLocalize = true
+	Converted['String29'].Respective.ClipsDescendants = false
+	Converted['String29'].Respective.Active = false
+	Converted['String29'].Respective.Rotation = 0
+	Converted['String29'].Respective.SizeConstraint = Enum.SizeConstraint.RelativeXY
+	Converted['String29'].Respective.Visible = false
+	Converted['String29'].Respective.LayoutOrder = 0
+	Converted['String29'].Respective.ZIndex = 1
+	Converted['String29'].Respective.BorderSizePixel = 0
+	Converted['String29'].Respective.BorderMode = Enum.BorderMode.Outline
+	Converted['String29'].Respective.BorderColor3 = Color3.new(0, 0, 0)
+	Converted['String29'].Respective.AutomaticSize = Enum.AutomaticSize.None
+	Converted['String29'].Respective.BackgroundTransparency = 1
+	Converted['String29'].Respective.BackgroundColor3 = Color3.new(1, 1, 1)
+	Converted['String29'].Respective.AnchorPoint = Vector2.new(0, 0)
+	Converted['String29'].Respective.Position = UDim2.new(0, 0, 0, 0)
+	Converted['String29'].Respective.Size = UDim2.new(1, 0, 1, 0)
+	Converted['String29'].Respective.Parent = Converted['String29'].Parent
+	Converted['String'] = Converted['String29'].Respective
+	table.remove(Converted, table.find(Converted, 'String29'))
 
 	Converted['Label30'].Respective.Name = 'Label'
 	Converted['Label30'].Respective.Interactable = false
