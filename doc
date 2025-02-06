@@ -14,9 +14,8 @@ Type - a string that can be one of - {"Bool", "Button"}
 --
 
 --
-AddThread(Thread)
+AddThread(Thread) - Adds a thread that should be able to disconnect, such as renderstepped events or mouse events. When the UI is closed, these threads will disconnect.
 
-Adds a thread that should be able to disconnect, such as renderstepped events. When the UI is closed, these threads will disconnect.
 local thread = game:GetService("RunService").RenderStepped:Connect(function()
 end)
 Library.AddThread(thread)
