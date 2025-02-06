@@ -1062,7 +1062,12 @@ function gLibrary.MakeRow(Name, Configuration)
 
 	return Row
 end
-
+function gLibrary.AddThread(Thread)
+	table.insert(TableThreadsToClean, Thread)
+end
+function gLibrary.AddRenderThread(Thread)
+	table.insert(TableThreadsForRender, Thread)
+end
 
 
 return gLibrary
