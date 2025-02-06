@@ -517,7 +517,7 @@ local function MakeUI()
 	Converted['Label20'].Respective.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
 	Converted['Label20'].Respective.AnchorPoint = Vector2.new(0.5, 0.5)
 	Converted['Label20'].Respective.Position = UDim2.new(0.500263333, 0, 0.500000119, 0)
-	Converted['Label20'].Respective.Size = UDim2.new(0.923327506, 0, 0.949999988, 0)
+	Converted['Label20'].Respective.Size = UDim2.new(0.989000022, 0, 0.850000024, 0)
 	Converted['Label20'].Respective.Text = 'Button'
 	Converted['Label20'].Respective.RichText = false
 	Converted['Label20'].Respective.TextColor3 = Color3.new(1, 1, 1)
@@ -547,7 +547,7 @@ local function MakeUI()
 	Converted['Bool21'].Respective.SizeConstraint = Enum.SizeConstraint.RelativeXY
 	Converted['Bool21'].Respective.Visible = false
 	Converted['Bool21'].Respective.LayoutOrder = 0
-	Converted['Bool21'].Respective.ZIndex = 1
+	Converted['Bool21'].Respective.ZIndex = 2
 	Converted['Bool21'].Respective.BorderSizePixel = 0
 	Converted['Bool21'].Respective.BorderMode = Enum.BorderMode.Outline
 	Converted['Bool21'].Respective.BorderColor3 = Color3.new(0, 0, 0)
@@ -578,8 +578,8 @@ local function MakeUI()
 	Converted['Label22'].Respective.BackgroundTransparency = 1
 	Converted['Label22'].Respective.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
 	Converted['Label22'].Respective.AnchorPoint = Vector2.new(0.5, 0.5)
-	Converted['Label22'].Respective.Position = UDim2.new(0.479999989, 0, 0.5, 0)
-	Converted['Label22'].Respective.Size = UDim2.new(0.893844366, 0, 1, 0)
+	Converted['Label22'].Respective.Position = UDim2.new(0.45159173, 0, 0.519319594, 0)
+	Converted['Label22'].Respective.Size = UDim2.new(0.893844366, 0, 0.850000024, 0)
 	Converted['Label22'].Respective.Text = 'Button'
 	Converted['Label22'].Respective.RichText = false
 	Converted['Label22'].Respective.TextColor3 = Color3.new(1, 1, 1)
@@ -617,8 +617,8 @@ local function MakeUI()
 	Converted['Filler23'].Respective.BackgroundTransparency = 0
 	Converted['Filler23'].Respective.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
 	Converted['Filler23'].Respective.AnchorPoint = Vector2.new(0.5, 0.5)
-	Converted['Filler23'].Respective.Position = UDim2.new(0.935000002, 0, 0.5, 0)
-	Converted['Filler23'].Respective.Size = UDim2.new(0.899999976, 0, 0.899999976, 0)
+	Converted['Filler23'].Respective.Position = UDim2.new(0.970000029, 0, 0.5, 0)
+	Converted['Filler23'].Respective.Size = UDim2.new(0.850000024, 0, 0.850000024, 0)
 	Converted['Filler23'].Respective.Parent = Converted['Filler23'].Parent
 	Converted['Filler'] = Converted['Filler23'].Respective
 	table.remove(Converted, table.find(Converted, 'Filler23'))
@@ -694,13 +694,6 @@ local function MakeUI()
 	table.remove(Converted, table.find(Converted, 'TextButton26'))
 
 	Converted['Configuration27'].Respective.Name = 'Configuration'
-	Converted['Configuration27'].Respective.Image = 'rbxassetid://2484570689'
-	Converted['Configuration27'].Respective.ImageColor3 = Color3.new(1, 1, 1)
-	Converted['Configuration27'].Respective.ImageRectOffset = Vector2.new(0, 0)
-	Converted['Configuration27'].Respective.ImageRectSize = Vector2.new(0, 0)
-	Converted['Configuration27'].Respective.ImageTransparency = 0
-	Converted['Configuration27'].Respective.ResampleMode = Enum.ResamplerMode.Default
-	Converted['Configuration27'].Respective.ScaleType = Enum.ScaleType.Stretch
 	Converted['Configuration27'].Respective.Interactable = true
 	Converted['Configuration27'].Respective.AutoLocalize = true
 	Converted['Configuration27'].Respective.ClipsDescendants = false
@@ -719,6 +712,13 @@ local function MakeUI()
 	Converted['Configuration27'].Respective.AnchorPoint = Vector2.new(0.5, 0.5)
 	Converted['Configuration27'].Respective.Position = UDim2.new(0.961000025, 0, 0.5, 0)
 	Converted['Configuration27'].Respective.Size = UDim2.new(0.800000012, 0, 0.800000012, 0)
+	Converted['Configuration27'].Respective.Image = 'rbxassetid://2484570689'
+	Converted['Configuration27'].Respective.ImageColor3 = Color3.new(1, 1, 1)
+	Converted['Configuration27'].Respective.ImageRectOffset = Vector2.new(0, 0)
+	Converted['Configuration27'].Respective.ImageRectSize = Vector2.new(0, 0)
+	Converted['Configuration27'].Respective.ImageTransparency = 0
+	Converted['Configuration27'].Respective.ResampleMode = Enum.ResamplerMode.Default
+	Converted['Configuration27'].Respective.ScaleType = Enum.ScaleType.Stretch
 	Converted['Configuration27'].Respective.Parent = Converted['Configuration27'].Parent
 	Converted['Configuration'] = Converted['Configuration27'].Respective
 	table.remove(Converted, table.find(Converted, 'Configuration27'))
@@ -771,8 +771,8 @@ local function MakeUI()
 	Converted['Label30'].Respective.BackgroundTransparency = 1
 	Converted['Label30'].Respective.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
 	Converted['Label30'].Respective.AnchorPoint = Vector2.new(0.5, 0.5)
-	Converted['Label30'].Respective.Position = UDim2.new(0.479999989, 0, 0.5, 0)
-	Converted['Label30'].Respective.Size = UDim2.new(0.893844366, 0, 1, 0)
+	Converted['Label30'].Respective.Position = UDim2.new(0.451999992, 0, 0.5, 0)
+	Converted['Label30'].Respective.Size = UDim2.new(0.893844366, 0, 0.850000024, 0)
 	Converted['Label30'].Respective.Text = 'Button'
 	Converted['Label30'].Respective.RichText = false
 	Converted['Label30'].Respective.TextColor3 = Color3.new(1, 1, 1)
@@ -810,8 +810,8 @@ local function MakeUI()
 	Converted['TextBox31'].Respective.BackgroundTransparency = 0.5
 	Converted['TextBox31'].Respective.BackgroundColor3 = Color3.new(0, 0, 0)
 	Converted['TextBox31'].Respective.AnchorPoint = Vector2.new(0.5, 0.5)
-	Converted['TextBox31'].Respective.Position = UDim2.new(0.814999998, 0, 0.5, 0)
-	Converted['TextBox31'].Respective.Size = UDim2.new(0.296000004, 0, 0.899999976, 0)
+	Converted['TextBox31'].Respective.Position = UDim2.new(0.843999982, 0, 0.5, 0)
+	Converted['TextBox31'].Respective.Size = UDim2.new(0.296000004, 0, 0.699999988, 0)
 	Converted['TextBox31'].Respective.Text = ''
 	Converted['TextBox31'].Respective.RichText = false
 	Converted['TextBox31'].Respective.TextColor3 = Color3.new(1, 1, 1)
@@ -833,7 +833,7 @@ local function MakeUI()
 	Converted['TextBox31'].Respective.TextEditable = true
 	Converted['TextBox31'].Respective.ShowNativeInput = true
 	Converted['TextBox31'].Respective.SelectionStart = -1
-	Converted['TextBox31'].Respective.CursorPosition = -1
+	Converted['TextBox31'].Respective.CursorPosition = 1
 	Converted['TextBox31'].Respective.Parent = Converted['TextBox31'].Parent
 	Converted['TextBox'] = Converted['TextBox31'].Respective
 	table.remove(Converted, table.find(Converted, 'TextBox31'))
