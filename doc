@@ -18,12 +18,6 @@ AddThread(Thread)
 
 Adds a thread that should be able to disconnect, such as renderstepped events. When the UI is closed, these threads will disconnect.
 local thread = game:GetService("RunService").RenderStepped:Connect(function()
-		local Character = Player.Character
-		local Root = Character:FindFirstChild("HumanoidRootPart")
-				
-		if Character and Root then
-			Character:PivotTo(Current)
-	  end
 end)
 Library.AddThread(thread)
 --
