@@ -114,8 +114,8 @@ local function MakeUI()
 	Converted['TopBar4'].Respective.BackgroundTransparency = 0
 	Converted['TopBar4'].Respective.BackgroundColor3 = Color3.new(0.207843, 0.207843, 0.207843)
 	Converted['TopBar4'].Respective.AnchorPoint = Vector2.new(0, 0)
-	Converted['TopBar4'].Respective.Position = UDim2.new(0, 0, 0, 0)
-	Converted['TopBar4'].Respective.Size = UDim2.new(1, 0, 0.100123614, 0)
+	Converted['TopBar4'].Respective.Position = UDim2.new(0, 0, 8.83902089e-08, 0)
+	Converted['TopBar4'].Respective.Size = UDim2.new(1, 0, 0.0545732044, 0)
 	Converted['TopBar4'].Respective.Parent = Converted['TopBar4'].Parent
 	Converted['TopBar'] = Converted['TopBar4'].Respective
 	table.remove(Converted, table.find(Converted, 'TopBar4'))
@@ -223,8 +223,8 @@ local function MakeUI()
 	Converted['App8'].Respective.BackgroundTransparency = 0
 	Converted['App8'].Respective.BackgroundColor3 = Color3.new(0.180392, 0.180392, 0.180392)
 	Converted['App8'].Respective.AnchorPoint = Vector2.new(0, 0)
-	Converted['App8'].Respective.Position = UDim2.new(0, 0, 0.10012351, 0)
-	Converted['App8'].Respective.Size = UDim2.new(1, 0, 0.899876356, 0)
+	Converted['App8'].Respective.Position = UDim2.new(0, 0, 0.054573264, 0)
+	Converted['App8'].Respective.Size = UDim2.new(1, 0, 0.945426583, 0)
 	Converted['App8'].Respective.Parent = Converted['App8'].Parent
 	Converted['App'] = Converted['App8'].Respective
 	table.remove(Converted, table.find(Converted, 'App8'))
