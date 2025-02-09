@@ -995,7 +995,6 @@ end
 
 MakeUI()
 
-
 local TableThreadsToClean = {}
 local TableThreadsForRender = {}
 
