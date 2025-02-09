@@ -21,7 +21,7 @@ local Row:Frame = Library.MakeRow("Button", {Type = "button", Container = Contai
 
 Row.ChildAdded:Connect(function(c)
 	if c.Name=="Event" then
-		print("Button pressed")
+		print("Button presed")
 	end
 end)
 
