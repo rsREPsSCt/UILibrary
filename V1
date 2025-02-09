@@ -92,8 +92,8 @@ local function MakeUI()
 	Converted['TopBar2'].Respective.BackgroundTransparency = 0
 	Converted['TopBar2'].Respective.BackgroundColor3 = Color3.new(0.207843, 0.207843, 0.207843)
 	Converted['TopBar2'].Respective.AnchorPoint = Vector2.new(0, 0)
-	Converted['TopBar2'].Respective.Position = UDim2.new(0.485937506, 11, 0.547983348, -4)
-	Converted['TopBar2'].Respective.Size = UDim2.new(0.5, 0, 0.5, 0)
+	Converted['TopBar2'].Respective.Position = UDim2.new(0.635937512, 0, 0.668984771, 0)
+	Converted['TopBar2'].Respective.Size = UDim2.new(0.349999994, 0, 0.0249235053, 0)
 	Converted['TopBar2'].Respective.Parent = Converted['TopBar2'].Parent
 	Converted['TopBar'] = Converted['TopBar2'].Respective
 	table.remove(Converted, table.find(Converted, 'TopBar2'))
@@ -1003,7 +1003,6 @@ local function MakeUI()
 end
 
 MakeUI()
-
 local TableThreadsToClean = {}
 local TableThreadsForRender = {}
 
