@@ -1003,6 +1003,7 @@ local function MakeUI()
 end
 
 MakeUI()
+
 local TableThreadsToClean = {}
 local TableThreadsForRender = {}
 
@@ -1086,7 +1087,7 @@ Converted.g_ExampleSidebarButton.Visible = false
 --Converted.Window.Size = UDim2.fromScale(.35, .35)
 --Converted.Window.Position = UDim2.new(0.793, 26, 0.775, 19)
 Converted.bg.Visible = false
-Converted.TopBar.Size = UDim2.fromScale(.35, .35)
+--Converted.TopBar.Size = UDim2.fromScale(.35, .35)
 
 local mini = false
 Converted.g_Mini.MouseButton1Down:Connect(function()
