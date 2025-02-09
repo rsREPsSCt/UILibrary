@@ -1077,6 +1077,7 @@ Converted.g_ExampleContainerRow.Visible = false
 Converted.g_ExampleSidebarButton.Visible = false
 Converted.Window.Size = UDim2.fromScale(.35, .35)
 Converted.Window.Position = UDim2.new(0.793, 26, 0.775, 19)
+Converted.bg.Visible = false
 
 local mini = false
 Converted.g_Mini.MouseButton1Down:Connect(function()
