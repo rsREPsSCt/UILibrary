@@ -92,8 +92,8 @@ local function MakeUI()
 	Converted['TopBar2'].Respective.BackgroundTransparency = 0
 	Converted['TopBar2'].Respective.BackgroundColor3 = Color3.new(0.207843, 0.207843, 0.207843)
 	Converted['TopBar2'].Respective.AnchorPoint = Vector2.new(0, 0)
-	Converted['TopBar2'].Respective.Position = UDim2.new(0.635937512, 0, 0.668984771, 0)
-	Converted['TopBar2'].Respective.Size = UDim2.new(0.349999994, 0, 0.0249235053, 0)
+	Converted['TopBar2'].Respective.Position = UDim2.new(0.553390324, 0, 0.575782001, 0)
+	Converted['TopBar2'].Respective.Size = UDim2.new(0, 530, 0, 84)
 	Converted['TopBar2'].Respective.Parent = Converted['TopBar2'].Parent
 	Converted['TopBar'] = Converted['TopBar2'].Respective
 	table.remove(Converted, table.find(Converted, 'TopBar2'))
@@ -278,6 +278,20 @@ local function MakeUI()
 	table.remove(Converted, table.find(Converted, 'App9'))
 
 	Converted['g_Sidebar10'].Respective.Name = 'g_Sidebar'
+	Converted['g_Sidebar10'].Respective.AutomaticCanvasSize = Enum.AutomaticSize.Y
+	Converted['g_Sidebar10'].Respective.CanvasSize = UDim2.new(0, 0, 1, 0)
+	Converted['g_Sidebar10'].Respective.CanvasPosition = Vector2.new(0, 0)
+	Converted['g_Sidebar10'].Respective.ElasticBehavior = Enum.ElasticBehavior.WhenScrollable
+	Converted['g_Sidebar10'].Respective.HorizontalScrollBarInset = Enum.ScrollBarInset.None
+	Converted['g_Sidebar10'].Respective.MidImage = 'rbxasset://textures/ui/Scroll/scroll-middle.png'
+	Converted['g_Sidebar10'].Respective.ScrollBarImageColor3 = Color3.new(0, 0, 0)
+	Converted['g_Sidebar10'].Respective.ScrollBarImageTransparency = 0
+	Converted['g_Sidebar10'].Respective.ScrollBarThickness = 0
+	Converted['g_Sidebar10'].Respective.ScrollingDirection = Enum.ScrollingDirection.XY
+	Converted['g_Sidebar10'].Respective.ScrollingEnabled = true
+	Converted['g_Sidebar10'].Respective.TopImage = 'rbxasset://textures/ui/Scroll/scroll-top.png'
+	Converted['g_Sidebar10'].Respective.VerticalScrollBarInset = Enum.ScrollBarInset.None
+	Converted['g_Sidebar10'].Respective.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
 	Converted['g_Sidebar10'].Respective.Interactable = true
 	Converted['g_Sidebar10'].Respective.AutoLocalize = true
 	Converted['g_Sidebar10'].Respective.ClipsDescendants = true
@@ -296,20 +310,6 @@ local function MakeUI()
 	Converted['g_Sidebar10'].Respective.AnchorPoint = Vector2.new(0, 0)
 	Converted['g_Sidebar10'].Respective.Position = UDim2.new(0, 0, 0, 0)
 	Converted['g_Sidebar10'].Respective.Size = UDim2.new(0.217730135, 0, 1.00000012, 0)
-	Converted['g_Sidebar10'].Respective.AutomaticCanvasSize = Enum.AutomaticSize.Y
-	Converted['g_Sidebar10'].Respective.CanvasSize = UDim2.new(0, 0, 1, 0)
-	Converted['g_Sidebar10'].Respective.CanvasPosition = Vector2.new(0, 0)
-	Converted['g_Sidebar10'].Respective.ElasticBehavior = Enum.ElasticBehavior.WhenScrollable
-	Converted['g_Sidebar10'].Respective.HorizontalScrollBarInset = Enum.ScrollBarInset.None
-	Converted['g_Sidebar10'].Respective.MidImage = 'rbxasset://textures/ui/Scroll/scroll-middle.png'
-	Converted['g_Sidebar10'].Respective.ScrollBarImageColor3 = Color3.new(0, 0, 0)
-	Converted['g_Sidebar10'].Respective.ScrollBarImageTransparency = 0
-	Converted['g_Sidebar10'].Respective.ScrollBarThickness = 0
-	Converted['g_Sidebar10'].Respective.ScrollingDirection = Enum.ScrollingDirection.XY
-	Converted['g_Sidebar10'].Respective.ScrollingEnabled = true
-	Converted['g_Sidebar10'].Respective.TopImage = 'rbxasset://textures/ui/Scroll/scroll-top.png'
-	Converted['g_Sidebar10'].Respective.VerticalScrollBarInset = Enum.ScrollBarInset.None
-	Converted['g_Sidebar10'].Respective.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
 	Converted['g_Sidebar10'].Respective.Parent = Converted['g_Sidebar10'].Parent
 	Converted['g_Sidebar'] = Converted['g_Sidebar10'].Respective
 	table.remove(Converted, table.find(Converted, 'g_Sidebar10'))
@@ -520,9 +520,23 @@ local function MakeUI()
 	table.remove(Converted, table.find(Converted, 'g_Containers20'))
 
 	Converted['g_ExampleContainer21'].Respective.Name = 'g_ExampleContainer'
+	Converted['g_ExampleContainer21'].Respective.AutomaticCanvasSize = Enum.AutomaticSize.Y
+	Converted['g_ExampleContainer21'].Respective.CanvasSize = UDim2.new(0, 0, 0, 0)
+	Converted['g_ExampleContainer21'].Respective.CanvasPosition = Vector2.new(0, 0)
+	Converted['g_ExampleContainer21'].Respective.ElasticBehavior = Enum.ElasticBehavior.WhenScrollable
+	Converted['g_ExampleContainer21'].Respective.HorizontalScrollBarInset = Enum.ScrollBarInset.None
+	Converted['g_ExampleContainer21'].Respective.MidImage = 'rbxasset://textures/ui/Scroll/scroll-middle.png'
+	Converted['g_ExampleContainer21'].Respective.ScrollBarImageColor3 = Color3.new(0, 0, 0)
+	Converted['g_ExampleContainer21'].Respective.ScrollBarImageTransparency = 0
+	Converted['g_ExampleContainer21'].Respective.ScrollBarThickness = 0
+	Converted['g_ExampleContainer21'].Respective.ScrollingDirection = Enum.ScrollingDirection.XY
+	Converted['g_ExampleContainer21'].Respective.ScrollingEnabled = true
+	Converted['g_ExampleContainer21'].Respective.TopImage = 'rbxasset://textures/ui/Scroll/scroll-top.png'
+	Converted['g_ExampleContainer21'].Respective.VerticalScrollBarInset = Enum.ScrollBarInset.None
+	Converted['g_ExampleContainer21'].Respective.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
 	Converted['g_ExampleContainer21'].Respective.Interactable = true
 	Converted['g_ExampleContainer21'].Respective.AutoLocalize = true
-	Converted['g_ExampleContainer21'].Respective.ClipsDescendants = true
+	Converted['g_ExampleContainer21'].Respective.ClipsDescendants = false
 	Converted['g_ExampleContainer21'].Respective.Active = true
 	Converted['g_ExampleContainer21'].Respective.Rotation = 0
 	Converted['g_ExampleContainer21'].Respective.SizeConstraint = Enum.SizeConstraint.RelativeXY
@@ -538,20 +552,6 @@ local function MakeUI()
 	Converted['g_ExampleContainer21'].Respective.AnchorPoint = Vector2.new(0, 0)
 	Converted['g_ExampleContainer21'].Respective.Position = UDim2.new(0, 0, 0, 0)
 	Converted['g_ExampleContainer21'].Respective.Size = UDim2.new(1, 0, 1, 0)
-	Converted['g_ExampleContainer21'].Respective.AutomaticCanvasSize = Enum.AutomaticSize.Y
-	Converted['g_ExampleContainer21'].Respective.CanvasSize = UDim2.new(1, 0, 1, 0)
-	Converted['g_ExampleContainer21'].Respective.CanvasPosition = Vector2.new(0, 0)
-	Converted['g_ExampleContainer21'].Respective.ElasticBehavior = Enum.ElasticBehavior.WhenScrollable
-	Converted['g_ExampleContainer21'].Respective.HorizontalScrollBarInset = Enum.ScrollBarInset.None
-	Converted['g_ExampleContainer21'].Respective.MidImage = 'rbxasset://textures/ui/Scroll/scroll-middle.png'
-	Converted['g_ExampleContainer21'].Respective.ScrollBarImageColor3 = Color3.new(0, 0, 0)
-	Converted['g_ExampleContainer21'].Respective.ScrollBarImageTransparency = 0
-	Converted['g_ExampleContainer21'].Respective.ScrollBarThickness = 0
-	Converted['g_ExampleContainer21'].Respective.ScrollingDirection = Enum.ScrollingDirection.XY
-	Converted['g_ExampleContainer21'].Respective.ScrollingEnabled = true
-	Converted['g_ExampleContainer21'].Respective.TopImage = 'rbxasset://textures/ui/Scroll/scroll-top.png'
-	Converted['g_ExampleContainer21'].Respective.VerticalScrollBarInset = Enum.ScrollBarInset.None
-	Converted['g_ExampleContainer21'].Respective.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
 	Converted['g_ExampleContainer21'].Respective.Parent = Converted['g_ExampleContainer21'].Parent
 	Converted['g_ExampleContainer'] = Converted['g_ExampleContainer21'].Respective
 	table.remove(Converted, table.find(Converted, 'g_ExampleContainer21'))
@@ -815,6 +815,13 @@ local function MakeUI()
 	table.remove(Converted, table.find(Converted, 'UICorner33'))
 
 	Converted['Configuration34'].Respective.Name = 'Configuration'
+	Converted['Configuration34'].Respective.Image = 'rbxassetid://2484570689'
+	Converted['Configuration34'].Respective.ImageColor3 = Color3.new(1, 1, 1)
+	Converted['Configuration34'].Respective.ImageRectOffset = Vector2.new(0, 0)
+	Converted['Configuration34'].Respective.ImageRectSize = Vector2.new(0, 0)
+	Converted['Configuration34'].Respective.ImageTransparency = 0
+	Converted['Configuration34'].Respective.ResampleMode = Enum.ResamplerMode.Default
+	Converted['Configuration34'].Respective.ScaleType = Enum.ScaleType.Stretch
 	Converted['Configuration34'].Respective.Interactable = true
 	Converted['Configuration34'].Respective.AutoLocalize = true
 	Converted['Configuration34'].Respective.ClipsDescendants = false
@@ -833,13 +840,6 @@ local function MakeUI()
 	Converted['Configuration34'].Respective.AnchorPoint = Vector2.new(0.5, 0.5)
 	Converted['Configuration34'].Respective.Position = UDim2.new(0.961000025, 0, 0.5, 0)
 	Converted['Configuration34'].Respective.Size = UDim2.new(0.800000012, 0, 0.800000012, 0)
-	Converted['Configuration34'].Respective.Image = 'rbxassetid://2484570689'
-	Converted['Configuration34'].Respective.ImageColor3 = Color3.new(1, 1, 1)
-	Converted['Configuration34'].Respective.ImageRectOffset = Vector2.new(0, 0)
-	Converted['Configuration34'].Respective.ImageRectSize = Vector2.new(0, 0)
-	Converted['Configuration34'].Respective.ImageTransparency = 0
-	Converted['Configuration34'].Respective.ResampleMode = Enum.ResamplerMode.Default
-	Converted['Configuration34'].Respective.ScaleType = Enum.ScaleType.Stretch
 	Converted['Configuration34'].Respective.Parent = Converted['Configuration34'].Parent
 	Converted['Configuration'] = Converted['Configuration34'].Respective
 	table.remove(Converted, table.find(Converted, 'Configuration34'))
@@ -915,6 +915,12 @@ local function MakeUI()
 	table.remove(Converted, table.find(Converted, 'Label37'))
 
 	Converted['TextBox38'].Respective.Name = 'TextBox'
+	Converted['TextBox38'].Respective.PlaceholderText = 'Input'
+	Converted['TextBox38'].Respective.ClearTextOnFocus = false
+	Converted['TextBox38'].Respective.TextEditable = true
+	Converted['TextBox38'].Respective.ShowNativeInput = true
+	Converted['TextBox38'].Respective.SelectionStart = -1
+	Converted['TextBox38'].Respective.CursorPosition = 1
 	Converted['TextBox38'].Respective.Text = ''
 	Converted['TextBox38'].Respective.RichText = false
 	Converted['TextBox38'].Respective.TextColor3 = Color3.new(1, 1, 1)
@@ -949,12 +955,6 @@ local function MakeUI()
 	Converted['TextBox38'].Respective.AnchorPoint = Vector2.new(0.5, 0.5)
 	Converted['TextBox38'].Respective.Position = UDim2.new(0.843999982, 0, 0.5, 0)
 	Converted['TextBox38'].Respective.Size = UDim2.new(0.296000004, 0, 0.699999988, 0)
-	Converted['TextBox38'].Respective.PlaceholderText = 'Input'
-	Converted['TextBox38'].Respective.ClearTextOnFocus = false
-	Converted['TextBox38'].Respective.TextEditable = true
-	Converted['TextBox38'].Respective.ShowNativeInput = true
-	Converted['TextBox38'].Respective.SelectionStart = -1
-	Converted['TextBox38'].Respective.CursorPosition = 1
 	Converted['TextBox38'].Respective.Parent = Converted['TextBox38'].Parent
 	Converted['TextBox'] = Converted['TextBox38'].Respective
 	table.remove(Converted, table.find(Converted, 'TextBox38'))
@@ -982,7 +982,7 @@ local function MakeUI()
 	Converted['UIPadding41'].Respective.PaddingBottom = UDim.new(0, 0)
 	Converted['UIPadding41'].Respective.PaddingLeft = UDim.new(0, 0)
 	Converted['UIPadding41'].Respective.PaddingRight = UDim.new(0, 0)
-	Converted['UIPadding41'].Respective.PaddingTop = UDim.new(0.00999999978, 0)
+	Converted['UIPadding41'].Respective.PaddingTop = UDim.new(0, 0)
 	Converted['UIPadding41'].Respective.Parent = Converted['UIPadding41'].Parent
 	Converted['UIPadding'] = Converted['UIPadding41'].Respective
 	table.remove(Converted, table.find(Converted, 'UIPadding41'))
