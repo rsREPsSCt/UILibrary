@@ -915,12 +915,6 @@ local function MakeUI()
 	table.remove(Converted, table.find(Converted, 'Label37'))
 
 	Converted['TextBox38'].Respective.Name = 'TextBox'
-	Converted['TextBox38'].Respective.PlaceholderText = 'Input'
-	Converted['TextBox38'].Respective.ClearTextOnFocus = false
-	Converted['TextBox38'].Respective.TextEditable = true
-	Converted['TextBox38'].Respective.ShowNativeInput = true
-	Converted['TextBox38'].Respective.SelectionStart = -1
-	Converted['TextBox38'].Respective.CursorPosition = 1
 	Converted['TextBox38'].Respective.Text = ''
 	Converted['TextBox38'].Respective.RichText = false
 	Converted['TextBox38'].Respective.TextColor3 = Color3.new(1, 1, 1)
@@ -937,6 +931,12 @@ local function MakeUI()
 	Converted['TextBox38'].Respective.MaxVisibleGraphemes = -1
 	Converted['TextBox38'].Respective.Font = Enum.Font.SourceSans
 	Converted['TextBox38'].Respective.TextDirection = Enum.TextDirection.Auto
+	Converted['TextBox38'].Respective.PlaceholderText = 'Input'
+	Converted['TextBox38'].Respective.ClearTextOnFocus = false
+	Converted['TextBox38'].Respective.TextEditable = true
+	Converted['TextBox38'].Respective.ShowNativeInput = true
+	Converted['TextBox38'].Respective.SelectionStart = -1
+	Converted['TextBox38'].Respective.CursorPosition = 1
 	Converted['TextBox38'].Respective.Interactable = true
 	Converted['TextBox38'].Respective.AutoLocalize = true
 	Converted['TextBox38'].Respective.ClipsDescendants = false
