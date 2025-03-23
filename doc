@@ -1,29 +1,23 @@
 --// Functions 
 
---
-MakeCategory(Name) - Returns a container and adds a category 
---
 
---
+MakeCategory(Name:string) - Returns a container and adds a category 
+MakeSubCategory(Name, Container) - Returns a subcategory, the container should deprive from MakeCategory
 Title(Name) - update the title of the main window
+AddThread(Thread) - The Thread should be able to have :Disconnect called. :Disconnect will be called on this Thread when the UI closes
 
 MakeRow(Name, {Type, Value, Container}) - Returns a row 
-Value - an optional ValueBase instance such as a boolvalue or stringvalue ( for example, if the type is string, you'd want a stringvalue
+Value - an optional ValueBase instance such as a boolvalue or stringvalue ( for example, if the type is string, you'd want a stringvalue.)
 Container - a container from the MakeCategory function 
-Type - a string that can be one of - {"Bool", "Button", "String"} 
+Type - a string that can be one of - {"Bool", "Button", "String"} - caps don't matter
 --
 
---
-AddThread(Thread) - Adds a thread that should be able to disconnect, such as renderstepped events or mouse events. When the UI is closed, these threads will disconnect.
 
-local thread = game:GetService("RunService").RenderStepped:Connect(function()
-end)
-Library.AddThread(thread)
---
 
 
 --// Other 
 
 Converted - a table containing all of the UIs contents
 
-
+--// Discreteis
+ 
