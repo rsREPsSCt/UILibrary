@@ -1534,11 +1534,12 @@ function gLibrary.MakeCategory(Name:string)
 	return Container
 end
 function gLibrary.MakeSubCategory(Name:string, Container:Frame)
+	local Containera = Container
 	local Container = Converted.g_ExampleSubContainer:Clone()
 	Container.Visible = true
 	Container.subTitle.Text = Name
 	Container:AddTag("Sub")
-	Container.Parent = Container
+	Container.Parent = Containera
 	
 	return Container
 end
